@@ -12,8 +12,8 @@ program
 program
   .command("log <description>")
   .description("Log a coding session")
-  .option("-p , --project <project>", "Projet name")
-  .option("-h , --hours <hours>", "Hours spent")
+  .option("-p ,--project <project>", "Projet name")
+  .option("-h ,--hours <hours>", "Hours spent")
   .action(logSession);
 
 program

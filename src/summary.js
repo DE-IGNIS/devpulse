@@ -4,7 +4,10 @@ import chalk from "chalk";
 export function displaySummary(options) {
   const data = loadData();
 
-  const currentDate = new Date().toISOString();
+  if (data.length === 0) {
+    return;
+  }
+  // const currentDate = new Date().toISOString();
   let oldDate = new Date();
 
   oldDate.setDate(oldDate.getDate() - 7);
@@ -17,7 +20,7 @@ export function displaySummary(options) {
   };
 
   data.forEach((element) => {
-    if (element.date < currentDate && element.date > oldDate) {
+    if (element.date > oldDate) {
       summary.hours_logged_in += element.hours;
       summary.total_sessions++;
       if (!summary.hours_per_project[element.project]) {
@@ -28,7 +31,7 @@ export function displaySummary(options) {
     }
   });
 
-  console.log(chalk.green("✅ Summary logged!"));
+  console.log(chalk.green("✅ Summary!"));
   console.log(chalk.cyan(`Total Hours Logged in : ${summary.hours_logged_in}`));
   console.log(chalk.cyan(`Total Sessions : ${summary.total_sessions}`));
   console.log(chalk.cyan("Hours Per Project:"));
