@@ -2,6 +2,7 @@
 import { program } from "commander";
 import { logSession } from "./log.js";
 import { listSessions } from "./list.js";
+import { displaySummary } from "./summary.js";
 
 program
   .name("devpulse")
@@ -20,5 +21,10 @@ program
   .description("List of coding sessions")
   .option("--all", "List all coding sessions")
   .action(listSessions);
+
+program
+  .command("summary")
+  .description("Summary of coding sessions for last 7 Days")
+  .action(displaySummary);
 
 program.parse();
