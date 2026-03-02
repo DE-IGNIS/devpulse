@@ -7,7 +7,7 @@ A lightweight Node.js CLI tool for logging your dev sessions, generating summari
 ## Installation
 
 ```bash
-npm install -g devpulse
+npm install -g @matrixmind/devpulse
 ```
 
 Or clone and link locally:
