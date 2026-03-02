@@ -1,5 +1,5 @@
 {
-  "name": "@de-ignis/devpulse",
+  "name": "@matrixmind/devpulse",
   "version": "1.0.0",
   "description": "A CLI Developer Session Logger",
   "main": "./src/index.js",
