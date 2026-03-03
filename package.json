@@ -25,6 +25,11 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.6.2",
-    "commander": "^14.0.3"
+    "chalk-animation": "^2.0.3",
+    "commander": "^14.0.3",
+    "figlet": "^1.10.0",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^13.3.0",
+    "nanospinner": "^1.2.2"
   }
 }
