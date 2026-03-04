@@ -37,7 +37,7 @@ npm link
 
 ---
 
-## 🚀 Commands
+##  Commands
 
 ### `devpulse log`
 
