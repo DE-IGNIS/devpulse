@@ -7,8 +7,12 @@
     "devpulse": "./src/index.js"
   },
   "type": "module",
+  "preferGlobal": true,
+  "files": [
+    "src"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests yet\""
   },
   "keywords": [
     "cli",
@@ -21,11 +25,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/DE-IGNIS/devpulse"
+    "url": "git+https://github.com/DE-IGNIS/devpulse.git"
+  },
+  "homepage": "https://github.com/DE-IGNIS/devpulse#readme",
+  "bugs": {
+    "url": "https://github.com/DE-IGNIS/devpulse/issues"
   },
   "author": {
     "name": "darsyn",
     "email": "matrixmind211@gmail.com"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "license": "MIT",
   "dependencies": {

@@ -1,19 +1,35 @@
-# 🛠️ DevPulse
+# DevPulse
 
-A lightweight Node.js CLI tool for logging your dev sessions, generating summaries, and keeping track of what you've been working on.
+![npm version](https://img.shields.io/npm/v/@matrixmind/devpulse)
+![npm downloads](https://img.shields.io/npm/dw/@matrixmind/devpulse)
+![license](https://img.shields.io/npm/l/@matrixmind/devpulse)
+![GitHub repo size](https://img.shields.io/github/repo-size/DE-IGNIS/devpulse)
+
+A lightweight Node.js CLI tool for logging development sessions, generating weekly summaries, and tracking what you've been working on — directly from your terminal.
+
+---
+
+## Features
+
+- Log development sessions with project name and hours worked
+- Generate automatic 7-day summaries
+- View complete session history
+- Clean and simple CLI experience
 
 ---
 
 ## Installation
 
+### Install globally via npm
+
 ```bash
 npm install -g @matrixmind/devpulse
 ```
 
-Or clone and link locally:
+### Or clone and link locally (for development)
 
 ```bash
-git clone https://github.com/your-username/devpulse.git
+git clone https://github.com/DE-IGNIS/devpulse.git
 cd devpulse
 npm install
 npm link
@@ -21,65 +37,61 @@ npm link
 
 ---
 
-## Commands
+## 🚀 Commands
 
 ### `devpulse log`
 
-Save a new dev session log.
+Save a new development session.
 
 ```bash
-devpulse log
+devpulse log "Your log message" --project "Project Name" --hours 3
 ```
 
-command : devpulse log "Developing dashboard for LegalAI" --project LegalAI --hours 3
-output : 
+**Example:**
 
+```bash
+devpulse log "Developing dashboard for LegalAI" --project "LegalAI" --hours 3
+```
+
+**Output:**
+
+```
 ✅ Session logged!
    Project : LegalAI
-   Date   : 2026-03-02T15:30:05.766Z
+   Date    : 2026-03-02T15:30:05.766Z
    Notes   : Developing dashboard for LegalAI
    Hours   : 3
-
+```
 
 ---
 
 ### `devpulse summary`
 
-Generate a summary of all logs from the **past 7 days**.
+Generate a summary of all logs from the past 7 days.
 
 ```bash
 devpulse summary
 ```
 
-Aggregates your recent session logs and outputs a digest of your activity over the last week — great for standups, retrospectives, or just staying on top of your work.
+This aggregates your recent session logs and provides a concise activity digest — ideal for standups, retrospectives, or weekly reviews.
 
 ---
 
 ### `devpulse list`
 
-Display all saved logs.
+Display all saved session logs.
 
 ```bash
 devpulse list
 ```
 
-Lists every log entry you've recorded, sorted by date.
+Lists every recorded entry, sorted by date.
 
 ---
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/) v16 or higher
+- Node.js v18 or higher
 - npm v7 or higher
 
 ---
-
-## Contributing
-
-Pull requests are welcome! Please open an issue first to discuss any major changes.
-
----
-
-## License
-
-[MIT](LICENSE)
