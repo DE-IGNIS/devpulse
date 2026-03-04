@@ -1,7 +1,7 @@
 {
   "name": "@matrixmind/devpulse",
   "version": "1.0.0",
-  "description": "A CLI Developer Session Logger",
+  "description": "A CLI Developer Session Logger Tool",
   "main": "./src/index.js",
   "bin": {
     "devpulse": "./src/index.js"
@@ -15,14 +15,19 @@
     "productivity",
     "developer-tools",
     "time-tracker",
-    "logger"
+    "logger",
+    "terminal",
+    "console"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/DE-IGNIS/devpulse"
   },
-  "author": "matrixmind",
-  "license": "ISC",
+  "author": {
+    "name": "darsyn",
+    "email" : "matrixmind211@gmail.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "chalk": "^5.6.2",
     "chalk-animation": "^2.0.3",
