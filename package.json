@@ -25,11 +25,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DE-IGNIS/devpulse.git"
+    "url": "git+https://github.com/DE-IGNIS/matrixmind-devpulse.git"
   },
-  "homepage": "https://github.com/DE-IGNIS/devpulse#readme",
+  "homepage": "https://github.com/DE-IGNIS/matrixmind-devpulse#readme",
   "bugs": {
-    "url": "https://github.com/DE-IGNIS/devpulse/issues"
+    "url": "https://github.com/DE-IGNIS/matrixmind-devpulse/issues"
   },
   "author": {
     "name": "darsyn",
